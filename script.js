@@ -116,17 +116,17 @@ let sobreMim = {
 };
 console.log(sobreMim);
 
-//15
+//16
 
 sobreMim.naturalidade = "carioca"
 console.log("Propriedade adicionada :'naturalidade'",sobreMim);
 
-// 16
+// 17
 
 delete sobreMim.idade
 console.log(sobreMim,"A propriedade idade foi removida");
 
-//17
+//18
 
 const chaves = Object.getOwnPropertyNames(sobreMim);
 let numeroDaChave = 0
@@ -135,7 +135,7 @@ chaves.forEach(chave =>{
     console.log(`a chave na posião ${numeroDaChave} é ${chave}`)
 })
 
-//18
+//19
 
 const cadastro = [{
     nome: "Pedro" ,
@@ -167,7 +167,7 @@ const cadastro = [{
     telefone: 4002-8922,
     amigos: ["Alice", "Jonathan", "Carla", "Daniel", "Elena"],
 }]
-// 19
+// 20
 
 cadastro.forEach(cadastrado =>{
     

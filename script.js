@@ -171,5 +171,5 @@ const cadastro = [{
 
 cadastro.forEach(cadastrado =>{
     
-    console.log(`Um dos amigos do ${cadastrado.nome} é : ${cadastrado.amigos[1]}`)
+    console.log(`Um dos amigos do(a) ${cadastrado.nome} é : ${cadastrado.amigos[1]}`)
 })

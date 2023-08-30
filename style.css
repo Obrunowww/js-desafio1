@@ -63,7 +63,7 @@ main .selecionado{
     border-radius: 50%;
     cursor: pointer;
     position: relative;
-    transition: all ease 1s;
+    transition: all ease 5s;
 }
 .fechar p{
     position: absolute;

@@ -20,7 +20,7 @@ const abrirExercicio = (numeroSelecionado) =>{
 
 tabuleiro.forEach((sessão, numero) =>{
     const valorNumero = numero + 1
-    sessão.innerHTML =` <p> ${valorNumero}</p>`
+    sessão.innerHTML =` <p>Exercicio: ${valorNumero}</p>`
     
     
     sessão.addEventListener("click", () => {

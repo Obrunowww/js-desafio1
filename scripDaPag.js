@@ -12,7 +12,7 @@ const abrirExercicio = (numeroSelecionado) =>{
     mostrarExercicio.style.display = "flex"
     exercicio.style.background = `url(./imagens/${numeroSelecionado}.jpg)`;
     exercicio.style.backgroundPosition = "center"
-    exercicio.style.backgroundSize= "90% 90%"
+    exercicio.style.backgroundSize= "contain"
     exercicio.style.backgroundRepeat = "no-repeat"
     
 

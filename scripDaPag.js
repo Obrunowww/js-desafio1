@@ -8,7 +8,10 @@ const fechar = () =>{
 }
 
 
+
 const abrirExercicio = (numeroSelecionado) =>{
+   
+    
     mostrarExercicio.style.display = "flex"
     exercicio.style.background = `url(./imagens/${numeroSelecionado}.jpg)`;
     exercicio.style.backgroundPosition = "center"
@@ -20,11 +23,14 @@ const abrirExercicio = (numeroSelecionado) =>{
 
 tabuleiro.forEach((sessão, numero) =>{
     const valorNumero = numero + 1
-    sessão.innerHTML =` <p>Exercicio: ${valorNumero}</p>`
+    
+   
+    sessão.innerHTML =` <p>Exercicio: <span class ="numeroExercicio">${valorNumero}</span></p>`
     
     
     sessão.addEventListener("click", () => {
-        abrirExercicio(valorNumero); 
+        
+        setTimeout(()=>abrirExercicio(valorNumero), 300)
     });
 })
 

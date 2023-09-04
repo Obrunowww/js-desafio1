@@ -133,7 +133,7 @@ console.log(sobreMim,"A propriedade idade foi removida");
 //18
 console.log("----Exercicio 18----")
 const chaves = Object.getOwnPropertyNames(sobreMim);
-let numeroDaChave = 0
+let numeroDaChave = 0;
 chaves.forEach(chave =>{
     numeroDaChave += 1
     console.log(`a chave na posião ${numeroDaChave} é ${chave}`)

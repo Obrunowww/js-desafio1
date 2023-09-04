@@ -36,8 +36,9 @@ main section{
 }
 main section:hover{
     scale: 1.1;
-    color: rgb(13, 36, 252);
-    background-color: rgba(40, 203, 253, 0.377);
+    color: rgb(0, 0, 0);
+    background-color: rgb(4, 190, 20);
+    
 }
 section p{
     font-size: 30px;

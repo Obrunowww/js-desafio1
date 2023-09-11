@@ -7,7 +7,14 @@ const fechar = () =>{
     mostrarExercicio.style.display = "none"
 }
 
-
+const rodarBotão = (e) =>{
+    const botãoSelecionado = e.target
+    botãoSelecionado.style.transform = "rotateY(180deg)"
+    setTimeout(()=>{
+        botãoSelecionado.style.transform = "rotateY(0deg)"
+    },400)
+    
+}
 
 const abrirExercicio = (numeroSelecionado) =>{
    
@@ -28,9 +35,10 @@ tabuleiro.forEach((sessão, numero) =>{
     sessão.innerHTML =` <p>Exercicio: <span class ="numeroExercicio">${valorNumero}</span></p>`
     
     
-    sessão.addEventListener("click", () => {
-        
-        setTimeout(()=>abrirExercicio(valorNumero), 300)
+    sessão.addEventListener("click", (e) => {
+        rodarBotão(e)
+        setTimeout(()=>abrirExercicio(valorNumero)
+        , 300)
     });
 })
 

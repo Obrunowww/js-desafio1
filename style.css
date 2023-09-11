@@ -87,7 +87,7 @@ main .selecionado{
    
 }
 section{
-    transition: all 400ms ease;
-    
+    transition: all 0.1s ease;
+    perspective: perspective(1000px) ;
    
 }
